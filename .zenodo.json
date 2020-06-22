@@ -1,0 +1,37 @@
+{
+   "creators": [
+      {
+         "name": "Zapata, Felipe", 
+         "orcid": "0000-0001-8286-677X"
+      }, 
+      {
+         "name": "Diblen, Faruk", 
+         "orcid": "0000-0002-0989-929X"
+      }, 
+      {
+         "name": "Verhoeven, Stefan", 
+         "orcid": "0000-0002-5821-2060"
+      }, 
+      {
+         "name": "Spaaks, Jurriaan H.", 
+         "orcid": "0000-0002-7064-4069"
+      }, 
+      {
+         "name": "Spreeuw, Hanno", 
+         "orcid": "0000-0002-5057-0322"
+      }
+   ], 
+   "description": "Various resources to set up GitHub Actions on self-hosted hardware.", 
+   "keywords": [
+      "Continuous Integration", 
+      "Github Actions", 
+      "self-hosted runners", 
+      "HPC", 
+      "GPU", 
+      "CI"
+   ], 
+   "license": {
+      "id": "Apache-2.0"
+   }, 
+   "title": "Self-hosted runners"
+}
