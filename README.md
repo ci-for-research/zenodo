@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3904266.svg)](https://doi.org/10.5281/zenodo.3904265)
+
 This repository is used to make bundled releases of some of this organization's repositories.
 
 To collect the latest master of the repositories, run
