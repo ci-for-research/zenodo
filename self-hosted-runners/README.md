@@ -3,7 +3,7 @@
 | 1. Code repository | [![GitHub badge](https://img.shields.io/badge/github-repo-000.svg?logo=github&labelColor=gray&color=blue)](https://github.com/ci-for-science/self-hosted-runners/) |
 | 2. License | [![License badge](https://img.shields.io/github/license/ci-for-science/self-hosted-runners)](https://github.com/ci-for-science/self-hosted-runners/) |
 | 3. Community registry | [![Ansible Galaxy badge](https://img.shields.io/badge/galaxy-fixme.fixme-660198.svg)](https://galaxy.ansible.com/fixme/fixme) |
-| 4. Enable citation | [![DOI](https://zenodo.org/badge/DOI/10.0000/FIXME.svg)](https://doi.org/10.0000/FIXME) |
+| 4. Enable citation | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3904265.svg)](https://doi.org/10.5281/zenodo.3904265) |
 | 5. Checklist | ? |
 
 This repository explains how to set up a server for running continuous integration tests on other hardware than what
@@ -25,14 +25,14 @@ Linux Ubuntu.
 
 | client OS | server hardware | Link |
 | --- | --- | --- |
-| Linux Ubuntu | remote machine at [SURF HPC Cloud] | [link](ubuntu-surf-hpc-cloud/README.md) |
+| Linux Ubuntu | remote machine at [SURF HPC Cloud] | [link](ubuntu-surf-hpc-cloud/runner/README.md) |
 | Linux Ubuntu | local machine via Docker           | [link](ubuntu-docker/README.md) |
 | Linux Ubuntu | local machine via VirtualBox       | [link](ubuntu-virtualbox/README.md) |
 | Linux Ubuntu | local machine via Vagrant          | [link](ubuntu-vagrant/README.md) |
 | Mac          | remote machine at [SURF HPC Cloud] | - |
 | Mac          | local machine via Docker           | - |
 | Mac          | local machine via VirtualBox       | - |
-| Windows      | remote machine at [SURF HPC Cloud] | - |
+| Windows      | remote machine at [SURF HPC Cloud] | [link](windows-surf-hpc-cloud/README.md) |
 | Windows      | local machine via Docker           | - |
 | Windows      | local machine via VirtualBox       | - |
 

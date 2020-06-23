@@ -10,11 +10,17 @@ We have 2 methods to install Nvidia drivers and Cuda.
 
 The command below runs the ansible-playbook and installs all necassary software. This ansible-playbook is specifically written for SURF HPC Cloud platform and GRID K2 hardware. However, it can easily be adapted for different platforms and graphics cards.
 
+Copy example hosts file and make necassary changes.
+
 ```shell
-ANSIBLE_HOST_KEY_CHECKING=False  docker run --rm -ti -v $PWD:/nlesc -v $YOUR_PRIVATE_KEY:/nlesc/id_rsa_ci_sprint  ansible/ansible-runner  ansible-playbook --become-user=ubuntu --inventory-file /nlesc/GPU/hosts /nlesc/GPU/install_cuda_grid2k.yml --private-key=/nlesc/id_rsa_ci_sprint --verbose
+cp hosts.example hosts
 ```
 
-You will need to change ``$YOUR_PRIVATE_KEY`` with full path of your private key and ``hosts`` file which has to connection details of the server.
+```shell
+docker run --rm -ti -v $PWD:/data --workdir=/data ansible/ansible-runner ansible-playbook playbook-install-cuda-gridk2.yml
+```
+
+``id_rsa`` is your rivate ssh key and ``hosts`` is the file which has the connection details of the server.
 
 ## 2- Manual installation
 
@@ -137,41 +143,6 @@ Built on Fri_Nov__3_21:07:56_CDT_2017
 Cuda compilation tools, release 9.1, V9.1.85
 ```
 
-### Compile and test Hello World example
+### Example code
 
-Save the example code below as `hello_world.cu`.
-
-```cpp
-#include<stdio.h>
-#include<stdlib.h>
-
-__global__ void print_gpu(void) {
-    printf("Houston, we have a problem in section [%d,%d] \
-        From Apollo 13\n", threadIdx.x,blockIdx.x);
-}
-
-int main(void) {
-    printf("This is Houston. Say again, please. \
-                From Base\n");
-    print_gpu<<<2,2>>>();
-    cudaDeviceSynchronize();
-    return 0;
-}
-```
-
-Compile the example:
-
-```shell
-nvcc -o hello_world.exe hello_world.cu
-```
-
-Run the example:
-
-```shell
-./hello
-This is Houston. Say again, please.                 From Base
-Houston, we have a problem in section [0,0]         From Apollo 13
-Houston, we have a problem in section [1,0]         From Apollo 13
-Houston, we have a problem in section [0,1]         From Apollo 13
-Houston, we have a problem in section [1,1]         From Apollo 13
-```
+See [gpu-houston](https://github.com/ci-for-science/example-gpu-houston) for a simple example code.
