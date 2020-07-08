@@ -19,10 +19,16 @@ authors:
     given-names: Jurriaan H.
     orcid: "https://orcid.org/0000-0002-7064-4069"
   -
+    affiliation: "Netherlands eScience Center"
+    family-names: Meijer
+    given-names: Christiaan
+    orcid: "https://orcid.org/0000-0002-5529-5761"
+  -
     family-names: Spreeuw
     given-names: Hanno
     orcid: "https://orcid.org/0000-0002-5057-0322"
   -
+    affiliation: "Netherlands eScience Center"
     family-names: Belloum
     given-names: Adam
     orcid: "https://orcid.org/0000-0001-6306-6937"
@@ -37,6 +43,6 @@ keywords:
   - "CI"
 license: "Apache-2.0"
 message: "If you use this software, please cite it using these metadata."
-repository-code: "https://github.com/ci-for-research/zenodo"
+repository-code: "https://github.com/ci-for-research"
 title: "Self-hosted runners"
 ...
