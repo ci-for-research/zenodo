@@ -19,6 +19,10 @@
       {
          "name": "Spreeuw, Hanno", 
          "orcid": "0000-0002-5057-0322"
+      }, 
+      {
+         "name": "Belloum, Adam", 
+         "orcid": "0000-0001-6306-6937"
       }
    ], 
    "description": "Various resources to set up GitHub Actions on self-hosted hardware.", 
